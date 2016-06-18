@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fpb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.owsica.andrzej.rectangularprogressbar.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <pl.owsica.andrzej.frameprogressbar.FrameProgressBar
+            android:id="@+id/rectangularPb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:frame_thickness="15dp"
+            app:progress_color="@color/green_600">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/sample" />
+
+        </pl.owsica.andrzej.frameprogressbar.FrameProgressBar>
+
+        <TextView
+            android:id="@+id/progressTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <pl.owsica.andrzej.frameprogressbar.FrameProgressBar
+            android:id="@+id/rectangularPb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:frame_thickness="15dp"
+            app:indeterminate="true"
+            app:indeterminate_length="80dp"
+            app:indeterminate_speed="60"
+            app:progress_color="@color/colorAccent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginStart="28dp"
+                    android:text="SAMPLE TEXT"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+        </pl.owsica.andrzej.frameprogressbar.FrameProgressBar>
+
+
+        <pl.owsica.andrzej.frameprogressbar.FrameProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            app:frame_thickness="15dp"
+            app:indeterminate="true"
+            app:indeterminate_length="80dp"
+            app:indeterminate_speed="90"
+            app:progress_color="@color/lime_600">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </pl.owsica.andrzej.frameprogressbar.FrameProgressBar>
+
+        <pl.owsica.andrzej.frameprogressbar.FrameProgressBar
+            android:id="@+id/rectangularPb_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            app:clockwise="false"
+            app:frame_thickness="15dp"
+            app:indeterminate="true"
+            app:indeterminate_length="80dp"
+            app:indeterminate_speed="90"
+            app:progress_color="@color/orange_600">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sendCardViewButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </pl.owsica.andrzej.frameprogressbar.FrameProgressBar>
+    </LinearLayout>
+
+
+    <!--
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/clockwiseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/placeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

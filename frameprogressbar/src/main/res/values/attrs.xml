@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FrameProgressBar">
+        <attr name="start_place">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="frame_thickness" format="dimension"/>
+        <attr name="clockwise" format="boolean" />
+        <attr name="progress" format="float"/>
+        <attr name="background_color" format="color" />
+        <attr name="progress_color" format="color"/>
+        <attr name="indeterminate" format="boolean"/>
+        <attr name="indeterminate_speed" format="integer"/>
+        <attr name="indeterminate_length" format="dimension"/>
+    </declare-styleable>
+</resources>
