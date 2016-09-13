@@ -43,7 +43,7 @@
             app:frame_thickness="15dp"
             app:indeterminate="true"
             app:indeterminate_length="80dp"
-            app:indeterminate_speed="60"
+            app:indeterminate_speed="100"
             app:progress_color="@color/colorAccent">
 
             <LinearLayout
@@ -74,7 +74,7 @@
             app:frame_thickness="15dp"
             app:indeterminate="true"
             app:indeterminate_length="80dp"
-            app:indeterminate_speed="90"
+            app:indeterminate_speed="100"
             app:progress_color="@color/lime_600">
 
             <EditText
@@ -83,46 +83,7 @@
                 android:layout_height="wrap_content" />
         </pl.owsica.andrzej.frameprogressbar.FrameProgressBar>
 
-        <pl.owsica.andrzej.frameprogressbar.FrameProgressBar
-            android:id="@+id/rectangularPb_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:clickable="true"
-            app:clockwise="false"
-            app:frame_thickness="15dp"
-            app:indeterminate="true"
-            app:indeterminate_length="80dp"
-            app:indeterminate_speed="90"
-            app:progress_color="@color/orange_600">
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/sendCardViewButton"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="2dp"
-                app:cardElevation="2dp"
-                app:cardPreventCornerOverlap="false"
-                app:contentPadding="0dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/send"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-        </pl.owsica.andrzej.frameprogressbar.FrameProgressBar>
     </LinearLayout>
 
 

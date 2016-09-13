@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -156,11 +157,11 @@ public class FrameProgressBar extends ViewGroup {
             maxHeight += child.getMeasuredHeight() + 2 * mLastFrameThickness;
 
 
-            childState = combineMeasuredStates(childState, child.getMeasuredState());
+            childState = ViewCompat.combineMeasuredStates(childState, ViewCompat.getMeasuredState(child));
         }
 
-        setMeasuredDimension(resolveSizeAndState(maxWidth, widthMeasureSpec, childState),
-                resolveSizeAndState(maxHeight, heightMeasureSpec, childState << MEASURED_HEIGHT_STATE_SHIFT));
+        setMeasuredDimension(ViewCompat.resolveSizeAndState(maxWidth, widthMeasureSpec, childState),
+                ViewCompat.resolveSizeAndState(maxHeight, heightMeasureSpec, childState << MEASURED_HEIGHT_STATE_SHIFT));
     }
 
 

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         rectangularProgressBar_1 = (FrameProgressBar) findViewById(R.id.rectangularPb_1);
         rectangularProgressBar_2 = (FrameProgressBar) findViewById(R.id.rectangularPb_2);
-        rectangularProgressBar_4 = (FrameProgressBar) findViewById(R.id.rectangularPb_4);
+        //rectangularProgressBar_4 = (FrameProgressBar) findViewById(R.id.rectangularPb_4);
 
         progressTv = (TextView) findViewById(R.id.progressTv);
 
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    progress += 0.35f;
+                    progress += 1f;
                     if (progress > 100)
                         progress = 0;
                     MainActivity.this.runOnUiThread(new Runnable() {
