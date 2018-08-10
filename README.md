@@ -47,7 +47,7 @@ You can easily customize progress bar apperance. Here are some editable attribut
 * **clockwise** - accepts true or false, defines direction of progress bar
 * **start_place** - accepts left/right/top/bottom defines starting ledge of progress bar
 * **indeterminate** - true/false - self explenatory
-* **indeterminate_length** - dimension - lenght of indeterminate rectangle
+* **indeterminate_length** - dimension - lenght of indeterminate bar
 * **indeterminate_speed** - numeric - speed of indeterminate rectangle
 
 You can change every attribute in java code after instantiating of the view. More code examples could be find in sample app or on Wiki.
