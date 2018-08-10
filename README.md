@@ -41,7 +41,7 @@ FrameProgressBar has also indeterminate work mode, you will only have to pass it
 
 You can easily customize progress bar apperance. Here are some editable attributes:
 
-* **frame_thicknes** - self explenatory
+* **frame_thicknes**
 * **progress_color** - color of progress bar(moving one)
 * **background_color** - color of background frame(it's transparent by default)
 * **clockwise** - accepts true or false, defines direction of progress bar
