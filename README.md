@@ -1,7 +1,7 @@
 # frame-progress-bar
 
 ## Introduction
-Library based on awesome [android-square-progressbar](https://github.com/mrwonderman/android-square-progressbar). Added ability to nest any view you want inside progress bar and few other features like changing direction of progress bar or setting starting place.
+Library based on [android-square-progressbar](https://github.com/mrwonderman/android-square-progressbar). Added ability to nest any view  progress bar and few other features like changing direction of progress bar or setting starting place.
 
 ## Usage
 ### Gradle
@@ -18,7 +18,7 @@ Library based on awesome [android-square-progressbar](https://github.com/mrwonde
 
 ### Code
 
-FrameProgressBar is ViewGroup so you can define it just like that. What's important - FrameProgressBar accepts only one child so if you want to display more views inside you will have to wrap it in another ViewGroup.    
+FrameProgressBar is ViewGroup so you can are able to nest views insiade. To note - FrameProgressBar accepts only one child so if you want to display more views inside you will have to wrap it in another ViewGroup.    
 
     <pl.owsica.andrzej.frameprogressbar.FrameProgressBar
         android:layout_width="wrap_content"
